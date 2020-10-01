@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'bu-f!5&q4hq&(_1e!e8^yz&89a0v@$pzdd(9bpsf@u2ahp#$)1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['baubeks-portfolio.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'django.contrib.sessions',
+    
     'main.apps.MainConfig',
 
 ]

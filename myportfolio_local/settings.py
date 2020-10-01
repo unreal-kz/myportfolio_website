@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'bu-f!5&q4hq&(_1e!e8^yz&89a0v@$pzdd(9bpsf@u2ahp#$)1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['baubeks-portfolio.herokuapp.com', '127.0.0.1']
 
@@ -126,8 +126,7 @@ USE_TZ = True
 STATIC_URL = '/staticfiles/'
 MEDIA_URL = '/assets/'
 
-STATIC_ROOT = os.path.join (BASE_DIR , 'static')
-
 STATICFILES_DIRS = [ os.path.join(BASE_DIR,'staticfiles') ,]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles/assets/')
+STATIC_ROOT = os.path.join (BASE_DIR , 'static')
 
